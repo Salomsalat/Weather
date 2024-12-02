@@ -1,0 +1,132 @@
+.all_wrap {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+}
+.omg{
+  max-width: 400px;
+  width: 100%;
+}
+.why{
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+.bottom_case {
+  text-align: center;  
+}
+.need{
+  width: 100%;
+  max-width: 100%;
+  height: 1000px;
+}
+.bottom_list {
+  list-style-type: none;
+  text-align: center;
+}
+.bottom_item {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  text-align: start;
+  gap: 10px;
+}
+.top_case_top {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.low_case {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  color: #898989;
+}
+.top_case {
+  background-color: #292929;
+  border-radius: 20px;
+  width: 100%;
+  width: 400px;
+  margin-left: 100px;
+  height: 200px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.bottom_case {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 4000px;
+}
+.bottom_case_2 {
+  text-align: left;
+  background-color: #292929;
+  height: 540px;
+  margin-top: 80px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  width: 80px;
+  padding: 0;
+  height: 80px;
+}
+
+@media only screen and (max-width: 1405px) {
+  .top_case {
+    max-width: 100%;
+    width: 100%;
+  }
+  .bottom_case{
+    max-width: 100%;
+    width: 100%;
+  }
+  .bottom_item{
+    width: 230px;
+    font-size: 13px;
+    height: 100px;
+  }
+  .logo{
+    width: 50px;
+    height: 50px;
+  }
+}
+@media only screen and (max-width: 650px) {
+    .top_case {
+      max-width: 100%;
+    }
+    .bottom_case{
+      max-width: 100%;
+    }
+    .bottom_item{
+      width: 250px;
+      margin-left: 40px;
+      font-size: 12px;
+      height: 100px;
+    }
+    .bottom-list{
+      text-align: center;
+      justify-content: center;
+      display: block;
+    }
+    .logo{
+      width: 25px;
+      height: 25px;
+    }
+    
+  }
+  @media only screen and (max-width: 570px){
+      .all_wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+      }
+  }

@@ -1,0 +1,297 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #212528;
+}
+
+.dashboard {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #292929;
+  border-radius: 10px;
+  width: 200px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+.card p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin: 5px 0;
+}
+
+.card span {
+  font-weight: bold;
+}
+
+.air-quality-data {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge {
+    margin-bottom: 15px;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  color: white;
+  background-color: #ff4d4d;
+  border-radius: 20px;
+}
+.sunrise-sunset {
+  width: 450px;
+}
+.air-quality {
+  width: 450px;
+}
+.NEED {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+}
+.hm {
+    padding-top: 10px;
+  display: flex;
+  width: 1000px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.humidity{
+    width: 300px
+
+}
+.pres{
+    width: 300px
+}
+.vis{
+    width: 300px
+
+}
+.wind{
+    width: 300px
+
+}
+.feels{
+    width: 300px
+}
+.hmmm{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px ;
+    color: #898989;
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+}
+.need_h1{
+    margin-bottom: 20px;
+}
+.info {
+  margin-top: 10px;
+  width: 930px;
+}
+
+.info_list {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  gap: 10px;
+}
+
+.info_item {
+  width: 225px;
+  background-color: #292929;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.info_span {
+  color: #898989;
+  font-size: small;
+}
+
+.loll {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.katta {
+  color: white;
+}
+.hh3{
+  font-size: 40px;
+}
+.sun{
+  width: 100px;
+  height: 100px;
+}
+.p{
+  font-size: 40px;
+}@media screen and (max-width: 1405px) {
+  .grid-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .NEED {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    gap: 20px;
+  }
+  .temp{
+    font-size: 10px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .info_item {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .air-quality-data {
+    grid-template-columns: 1fr; /* Stacks data points vertically on small screens */
+  }
+
+  .sun {
+    width: 40px;
+    height: 40px;
+  }
+
+  .p {
+    font-size: 1rem;
+  }
+
+  .badge {
+    font-size: 0.7rem;
+    padding: 3px 8px;
+  }
+
+  .need_h1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 852px) {
+  .info_item {
+    padding: 10px;
+  }
+
+  .loll h1 {
+    font-size: 1rem;
+  }
+  .temp{
+    font-size: 10px;
+  }
+
+  .sun {
+    width: 30px;
+    height: 30px;
+  }
+
+  .p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 690px) {
+  .grid-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .NEED {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    width: 300px;
+    gap: 20px;
+  }
+  .temp{
+    font-size: 10px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .info_item {
+    width: 100%;
+    max-width: 300px;
+  }
+  .info_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; 
+    max-width: 100%;
+  
+  }
+
+  .air-quality-data {
+    grid-template-columns: 1fr;
+  }
+
+  .sun {
+    width: 40px;
+    height: 40px;
+  }
+
+  .p {
+    font-size: 1rem;
+  }
+
+  .badge {
+    font-size: 0.7rem;
+    padding: 3px 8px;
+  }
+
+  .need_h1 {
+    font-size: 1.2rem;
+  }
+}
+
+.good{
+  background-color: green;
+  color: #fff;
+}
+.mode{
+  background-color: lightgreen;
+  color: #292929;
+}
+.fair{
+  background-color: yellow;
+  color: #292929;
+}
+.poor{
+  background-color: orange;
+  color: #292929;
+}
+.very{
+  background-color: red;
+  color: #fff;
+}
